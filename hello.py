@@ -3,4 +3,4 @@ def add(x,y):
 
 result = add(1,2)
 
-print("This is the sum: " + str(x) + " " + str(y) + " " + str(result))
+print("This is the sum: " + str(1) + " " + str(2) + " " + str(result))
