@@ -8,3 +8,6 @@ nbval
 click
 flask
 requests
+pandas-gbq
+sklearn
+tensorflow
