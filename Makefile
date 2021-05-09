@@ -7,7 +7,7 @@ format:
     
 lint:
 	pylint --disable=R,C hello.py
-	pylint --disable=R,C ingest.py
+	#pylint --disable=R,C ingest.py
 
 test:
 	python -m pytest -vv --cov=hello test_hello.py

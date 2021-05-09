@@ -11,3 +11,9 @@ requests
 pandas-gbq
 sklearn
 tensorflow
+fsspec
+gcsfs
+google-cloud-storage
+datalab
+#google.datalab.storage
+#google.datalab.bigquery
