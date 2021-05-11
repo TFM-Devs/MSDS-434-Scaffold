@@ -6,7 +6,7 @@ on:
     - master
     
 env:
-  PROJECT_ID: $(( secrets.RUN_PROJECT }}
+  PROJECT_ID: ${{ secrets.RUN_PROJECT }}
   RUN_REGION: us-central1
   SERVICE_NAME: msds-434-ncaa
   
@@ -27,21 +27,21 @@ steps:
     project_id: ${{ secrets.RUN_PROJECT }}
 
 # Build and push image to Google Container REgistery
--name: Build
- run: |-
-  gcloud builds submit \
-    --quiet \
-    --tage "gcr.io/$PROJECT_ID/$SERVICE_NAME:$GITHUB_SHA"
+- name: Build
+  run: |-
+    gcloud builds submit \
+      --quiet \
+      --tage "gcr.io/$PROJECT_ID/$SERVICE_NAME:$GITHUB_SHA"
  
  #Deploy image to Cloud Run
- - name: Deploy
+- name: Deploy
   run: |-
     gcloud run deploy "$SERVICE_NAME" \
-    --quiet \
-    --region "$RUN_REGION" \
-    --image "gcr.io/$PROJECT_ID/$SERVICE_NAME:$GITHUB_SHA" \
-    --platfomr "managed" \
-    --allow-unauthenticated
+      --quiet \
+      --region "$RUN_REGION" \
+      --image "gcr.io/$PROJECT_ID/$SERVICE_NAME:$GITHUB_SHA" \
+      --platfomr "managed" \
+      --allow-unauthenticated
     
  # Deploy image to Cloud RUn
  
