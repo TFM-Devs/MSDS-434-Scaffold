@@ -32,7 +32,6 @@ df = df.dropna()
 from datalab.context import Context
 import google.datalab.storage as storage
 import google.datalab.bigquery as bq
-import pandas as pd
 
 # Dataframe to write
 simple_dataframe = df
