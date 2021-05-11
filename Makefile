@@ -7,7 +7,7 @@ format:
     
 lint:
 	pylint --disable=R,C ingest.py
-	pylint --disable=R,C app.yml
+	pylint --disable=R,C app.yaml
 	
 	#pylint --disable=R,C ingest.py
 
