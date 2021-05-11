@@ -1,5 +1,4 @@
 import pandas as pd
-
 # https://cloud.google.com/resource-manager/docs/creating-managing-projects
 project_id = 'msds-434-309203'
 sample_count = 300000000
@@ -32,7 +31,6 @@ df = df.dropna()
 from datalab.context import Context
 import google.datalab.storage as storage
 import google.datalab.bigquery as bq
-import pandas as pd
 
 # Dataframe to write
 simple_dataframe = df
