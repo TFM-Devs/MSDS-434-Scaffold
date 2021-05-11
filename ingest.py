@@ -1,5 +1,3 @@
-import pandas as pd
-
 # https://cloud.google.com/resource-manager/docs/creating-managing-projects
 project_id = 'msds-434-309203'
 sample_count = 300000000
