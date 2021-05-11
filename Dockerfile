@@ -1,5 +1,5 @@
 #python
-FROM ubuntu:18.04
+FROM python:3.7
 
 WORKDIR /MSDS-434-Scaffold
 
