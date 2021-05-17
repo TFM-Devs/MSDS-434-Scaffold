@@ -11,6 +11,7 @@ ENV PORT=8080
 RUN pip install --upgrade pip &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
 
+CMD
 EXPOSE 8080
 
 
