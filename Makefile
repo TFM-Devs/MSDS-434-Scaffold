@@ -7,7 +7,8 @@ format:
 	black *.py
     
 lint:
-	pylint --disable=R,C ingest.py
+	pylint --disable=R,C model_batch_predictions.py
+	pylint --disable=R,C ncaa_data_pipeline.py
 
 test:
 	#python -m pytest -vv --cov=hello test_hello.py
