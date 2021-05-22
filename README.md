@@ -1,3 +1,4 @@
+![Capture](https://user-images.githubusercontent.com/67444022/119213552-c5a79900-ba74-11eb-87e8-c103d88df00e.PNG)
 # MSDS-434-Scaffold
 ### Predicting Points Scored in an NCAA Basketball Game
 
